@@ -3,6 +3,7 @@ from .t5 import generate_nmt
 from .nlpcode import compose_nmt
 from .log import trans_log
 import uuid
+import json
 
 
 try:
