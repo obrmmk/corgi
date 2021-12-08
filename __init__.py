@@ -4,7 +4,7 @@ from .nlpcode import compose_nmt
 from .log import trans_log
 import uuid
 import json
-
+import time
 
 try:
     import IPython
@@ -156,6 +156,7 @@ def run_corgi(nmt, delay=600, print=print_nop):
                     print(line, '=>', translated)
                     cached[line] = translated
                     logs.append({
+                        'time' : time.time(),
                         'index': seq,
                         'input': line,
                         'translated': translated,
