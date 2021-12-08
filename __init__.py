@@ -4,6 +4,8 @@ from .nlpcode import compose_nmt
 from .log import trans_log
 import uuid
 import json
+import time
+import socket
 
 
 try:
@@ -155,7 +157,12 @@ def run_corgi(nmt, delay=600, print=print_nop):
                     translated = nmt(line, beams=1)
                     print(line, '=>', translated)
                     cached[line] = translated
+                    host = socket.gethostname()
+                    ip = socket.gethostbyname(host)
+                    
                     logs.append({
+                        'user' : ip,
+                        'time' : time.time(),
                         'index': seq,
                         'input': line,
                         'translated': translated,
