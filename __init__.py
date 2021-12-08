@@ -5,11 +5,7 @@ from .log import trans_log
 import uuid
 import json
 import time
-<<<<<<< HEAD
 import socket
-
-=======
->>>>>>> 4cdb3eb22837db21885103fb27e5155834e04d1f
 
 try:
     import IPython
@@ -164,10 +160,7 @@ def run_corgi(nmt, delay=600, print=print_nop):
                     ip = socket.gethostbyname(host)
                     
                     logs.append({
-<<<<<<< HEAD
                         'user' : ip,
-=======
->>>>>>> 4cdb3eb22837db21885103fb27e5155834e04d1f
                         'time' : time.time(),
                         'index': seq,
                         'input': line,
