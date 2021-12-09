@@ -122,7 +122,7 @@ SCRIPT = '''
                 const textarea = document.getElementById('output');
                 textarea.textContent = data.result;
             })();
-        }, 600*2);  // 何も打たななかったら600*2ms秒後に送信
+        }, 600);  // 何も打たななかったら600ms秒後に送信
         logtimer = setTimeout(() => {
             logtimer = null;
             google.colab.kernel.invokeFunction('notebook.Logger', [text], {});
