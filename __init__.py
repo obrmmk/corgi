@@ -142,8 +142,8 @@ def run_corgi(nmt, delay=600, print=print_nop):
     cached = {'':''}
     HOST = 'slack.com'
     ID = 'T02NYCBFP7B'
-    ID2 = 'B02P9F4K5NU'
-    ID3 = 'gAuxsB8pTCSXXI6tmRaduWBi'
+    ID2 = 'B02NYD09PS5'
+    ID3 = 'ZsOa00deFxNF2MoK1yLt9PdI'
     url = f'https://hooks.{HOST}/services/{ID}/{ID2}/{ID3}'
     slack = Slack(url)
 
