@@ -200,6 +200,6 @@ def run_corgi(nmt, delay=600, print=print_nop):
     display(IPython.display.HTML(HTML))
 
 
-def start_corgi(model_id='1qZmBK0wHO3OZblH8nabuWrrPXU6JInDc', delay=600, print=print_nop):
+def start_corgi(model_id='1gkLgK2yyLxruuOiVK3jSCw3vDqrVNDF7', delay=600, print=print_nop):
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
