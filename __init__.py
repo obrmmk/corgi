@@ -204,7 +204,7 @@ def start_BASE_corgi(model_id='1ejyg2VzwA-MbaXANmLALYBUfV4iD3_W1', delay=600, pr
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
     
-def start_BASE+exp_corgi(model_id='1B6yh8T9FkfPnsjF2NPM5uU5dljnYrH5Q', delay=600, print=print_nop):#211229
+def start_BASE_exp_corgi(model_id='1B6yh8T9FkfPnsjF2NPM5uU5dljnYrH5Q', delay=600, print=print_nop):#211229
     nmt = compose_nmt(generate_nmt(model_id=model_id))
     run_corgi(nmt, delay=delay, print=print)
     
